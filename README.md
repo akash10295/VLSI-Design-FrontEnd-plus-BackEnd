@@ -25,4 +25,4 @@ endmodule
 ```
 For more learning about Verilog with examples you can visit [ASIC-World](http://www.asic-world.com/).
 
-My verilog code for this project is 
+My verilog code for this project is [alu.v](https://github.com/akash10295/Complete-VLSI-Project-Front-end-Back-end-/blob/master/alu.v)
