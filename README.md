@@ -133,10 +133,8 @@ Once done with the sub part, I designed layout of all the required cells. The sc
 
 ## 4.Library creation and synthesis using it.
 Once all the layouts were done, next step was to create the library file using it. This included several steps as follows:
-
-
-(i) Using SiliconSmart ACE craeting a .lib file from the Cadence library which consist of all the required layouts.
-(ii) Using this library, now synthesize the original verilog code to generate a new mapped netlist based on newly created library.
-(ii) Also from the .lib file, creating the .db file using Library Compiler (LC shell).
-(iii) Creating a Library Exchange File (LEF) from the Cadence library and also its ASCII file.
-(iv) Another LEF file was created usign previously created LEF and ASCII file which will support Cadence Encounter.
+1. Using SiliconSmart ACE craeting a .lib file from the Cadence library which consist of all the required layouts.
+2. Using this library, now synthesize the original verilog code to generate a new mapped netlist based on newly created library.
+3. Also from the .lib file, creating the .db file using Library Compiler (LC shell).
+4. Creating a Library Exchange File (LEF) from the Cadence library and also its ASCII file.
+5. Another LEF file was created usign previously created LEF and ASCII file which will support Cadence Encounter.
