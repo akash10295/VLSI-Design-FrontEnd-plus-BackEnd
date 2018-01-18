@@ -12,7 +12,7 @@ module boosted_alu(in1,in2,select,clock,reset,out);
 		begin
 		case (select)
 			3'b000 : mux<=in1+in2;
-			3'b001 : mux<=in11-in2;
+			3'b001 : mux<=in1-in2;
 			3'b010 : mux<=in1/in2;
 			3'b011 : mux<=in1%in2;
 			3'b100 : mux<=in1&in2;
