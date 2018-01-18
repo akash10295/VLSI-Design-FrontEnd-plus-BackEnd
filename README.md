@@ -1,6 +1,6 @@
 # VLSI Design Project (FrontEnd + BackEnd)
 
-This was my first academic project in my graduate studies under course __EE6325:VLSI Design__. This was a complete long project consisting of complete VLSI design process from front end designing (RTL coding) to backend design (layout design). For the better flow, the project was divided into parts as follows:
+This was my first academic project in my graduate studies under course __EE6325: VLSI Design__. This was a complete long project consisting of complete VLSI design process from front end designing (RTL coding) to backend design (layout design). For the better flow, the project was divided into parts as follows:
 1. RTL Coding (Frontend part)
 2. Synthesis
 3. Layout designing (Backend part) (With a sub-part where aim was to minimize the Energy-Delay Product while minimizing the cell area)
@@ -25,4 +25,5 @@ endmodule
 ```
 For more learning about Verilog with examples you can visit [ASIC-World](http://www.asic-world.com/).
 
-My verilog code for this project is [alu.v](https://github.com/akash10295/Complete-VLSI-Project-Front-end-Back-end-/blob/master/alu.v)
+My behavioral code for this project is [alu.v](https://github.com/akash10295/Complete-VLSI-Project-Front-end-Back-end-/blob/master/alu.v)
+In HDL, testbench is needed to test the correct response of the code without needing of actual hardware. Test benches are of same file format as that of HDL code, i.e. they are verilog files. The testbench for my verilog is [alu_tb.v](https://github.com/akash10295/Complete-VLSI-Project-Front-end-Back-end-/blob/master/alu_tb.v).
