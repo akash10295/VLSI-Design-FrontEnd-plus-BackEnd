@@ -5,7 +5,7 @@ This was my first academic project in my graduate studies under course __EE6325:
 2. Synthesis
 3. Layout designing (Backend part) (With a sub-part where aim was to minimize the Energy-Delay Product while minimizing the cell area)
 4. Library creation and synthesis using it
-5. Routing and floorplanning.
+5. Routing, floorplanning and Static Time Analysis (STA).
 
 ## 1. RTL Coding (Frontend part)
 Our first job was to select an arbitary digital circuit to deisgn in HDL form. For this project I proceeded by selecting The Arithmetic and Logic Unit (ALU) of two 24 bit inputs and one 25 bit output. It was capable of performing 8 operations
@@ -127,6 +127,16 @@ As I mentioned in part 2 that the library which I used to synthesize the code wa
 
 Before I start the layout designing of the all cells in the library there was a sub part in this step which aimed to design a layout of an inverter and size it in such a way that it will provide minimum Energy-Delay Product (EDP) while minimizing the total cell area. Now it is normal for a rookie/non-technical person to think that this may need a hit-n-try method to get the optimum cell size along with optimum EDP. But that is not the case. For this, I designed a simple inverter layout and generated its spice netlist (.sp file) after performing DRC/LVS/QRC. Then with the help of [HSPICE](https://github.com/akash10295/Complete-VLSI-Project-Front-end-Back-end-/blob/master/inv_SPICE.sp) and the spice netlist I swept the value of Wp (Width of the p-mos) while keeping the Wn (Width of the n-mos) constant.
 
-Once done with sub part I designed layout of all the required cells. The screenshot of layout of D Flipflop is shown below. Rest of the screenshots you can find [here](https://github.com/akash10295/Complete-VLSI-Project-Front-end-Back-end-/tree/master/Screenshots/Layouts)
+Once done with the sub part, I designed layout of all the required cells. The screenshot of layout of D Flipflop is shown below. Rest of the screenshots you can find [here](https://github.com/akash10295/Complete-VLSI-Project-Front-end-Back-end-/tree/master/Screenshots/Layouts).
 
 ![alt text](https://github.com/akash10295/Complete-VLSI-Project-Front-end-Back-end-/blob/master/Screenshots/Layouts/dff.JPG "D flip flop layout")
+
+## 4.Library creation and synthesis using it.
+Once all the layouts were done, next step was to create the library file using it. This included several steps as follows:
+
+
+(i) Using SiliconSmart ACE craeting a .lib file from the Cadence library which consist of all the required layouts.
+(ii) Using this library, now synthesize the original verilog code to generate a new mapped netlist based on newly created library.
+(ii) Also from the .lib file, creating the .db file using Library Compiler (LC shell).
+(iii) Creating a Library Exchange File (LEF) from the Cadence library and also its ASCII file.
+(iv) Another LEF file was created usign previously created LEF and ASCII file which will support Cadence Encounter.
