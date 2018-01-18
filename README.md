@@ -127,6 +127,6 @@ As I mentioned in part 2 that the library which I used to synthesize the code wa
 
 Before I start the layout designing of the all cells in the library there was a sub part in this step which aimed to design a layout of an inverter and size it in such a way that it will provide minimum Energy-Delay Product (EDP) while minimizing the total cell area. Now it is normal for a rookie/non-technical person to think that this may need a hit-n-try method to get the optimum cell size along with optimum EDP. But that is not the case. For this, I designed a simple inverter layout and generated its spice netlist (.sp file) after performing DRC/LVS/QRC. Then with the help of [HSPICE](https://github.com/akash10295/Complete-VLSI-Project-Front-end-Back-end-/blob/master/inv_SPICE.sp) and the spice netlist I swept the value of Wp (Width of the p-mos) while keeping the Wn (Width of the n-mos) constant.
 
+Once done with sub part I designed layout of all the required cells. The screenshot of layout of D Flipflop is shown below. Rest of the screenshots you can find [here](https://github.com/akash10295/Complete-VLSI-Project-Front-end-Back-end-/tree/master/Screenshots/Layouts)
 
-
-![alt text](https://github.com/akash10295/Complete-VLSI-Project-Front-end-Back-end-/blob/master/Screenshots/alu%20outputs.jpg "Logo Title Text 1")
+![alt text](https://github.com/akash10295/Complete-VLSI-Project-Front-end-Back-end-/blob/master/Screenshots/Layouts/dff.JPG "D flip flop layout")
