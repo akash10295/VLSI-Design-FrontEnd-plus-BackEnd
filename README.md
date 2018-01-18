@@ -27,3 +27,5 @@ For more learning about Verilog with examples you can visit [ASIC-World](http://
 
 My behavioral code for this project is [alu.v](https://github.com/akash10295/Complete-VLSI-Project-Front-end-Back-end-/blob/master/alu.v)
 In HDL, testbench is needed to test the correct response of the code without needing of actual hardware. Test benches are of same file format as that of HDL code, i.e. they are verilog files. The testbench for my verilog is [alu_tb.v](https://github.com/akash10295/Complete-VLSI-Project-Front-end-Back-end-/blob/master/alu_tb.v).
+There are many simulators available to run the verilog code. The one which I use is Xilinx ISE.
+[Here](https://github.com/akash10295/Complete-VLSI-Project-Front-end-Back-end-/blob/master/Screenshots/alu%20outputs.jpg) is the screenshot of the output waveforms after simulating the above code on testbench.
