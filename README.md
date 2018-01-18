@@ -134,7 +134,13 @@ Once done with the sub part, I designed layout of all the required cells. The sc
 ## 4.Library creation and synthesis using it.
 Once all the layouts were done, next step was to create the library file using it. This included several steps as follows:
 1. Using SiliconSmart ACE craeting a .lib file from the Cadence library which consist of all the required layouts.
-2. Using this library, now synthesize the original verilog code to generate a new mapped netlist based on newly created library.
-3. Also from the .lib file, creating the .db file using Library Compiler (LC shell).
+2. From the .lib file, creating the .db file using Library Compiler (LC shell).
+3. Using this library, now synthesize the original verilog code to generate a new mapped netlist based on newly created library.
 4. Creating a Library Exchange File (LEF) from the Cadence library and also its ASCII file.
 5. Another LEF file was created usign previously created LEF and ASCII file which will support Cadence Encounter.
+
+
+## 5.Routing, floorplanning and Static Time Analysis (STA).
+For routing and floorplanning the tool I used was Cadence Encounter. This tool uses the mapped netlist and LEF file which I created in the steps 3 and 5 in part 4 above. Once these files are imported in the tool and required settings are set floorplanning and routing is done as per need. The snippit below shows the screenshot of the user interface of Encounter.
+
+![alt text](http://www.utdallas.edu/~xxx110230/images/encounter19.jpg "Encounter UI")
