@@ -28,5 +28,10 @@ For more learning about Verilog with examples you can visit [ASIC-World](http://
 My behavioral code for this project is [alu.v](https://github.com/akash10295/Complete-VLSI-Project-Front-end-Back-end-/blob/master/alu.v)
 In HDL, testbench is needed to test the correct response of the code without needing of actual hardware. Test benches are of same file format as that of HDL code, i.e. they are verilog files. The testbench for my verilog is [alu_tb.v](https://github.com/akash10295/Complete-VLSI-Project-Front-end-Back-end-/blob/master/alu_tb.v).
 There are many simulators available to run the verilog code. The one which I used is Xilinx ISE.
-
 [Here](https://github.com/akash10295/Complete-VLSI-Project-Front-end-Back-end-/blob/master/Screenshots/alu%20outputs.jpg) is the screenshot of the output waveforms after simulating the above code on testbench.
+
+
+
+## 2. Synthesis
+The code which I wrote was a behvioral code and it needs to be converted to structural code. In simpler words, structural code describes the actual physical structure of the system whereas the behavioral code describes the behavior of the syhstem for different conditions.
+This process is also known as 'Synthesys'.
