@@ -126,3 +126,7 @@ This shows that there were 4039 cells in the final design.
 As I mentioned in part 2 that the library which I used to synthesize the code was provided by the college. Now My job was to create my own cell library just like that. The very first step to create my own library was to start designing the layouts of the gates/cells. The most popular tool for layout designing (a.k.a. Physical designing/BackEnd Designing) is Cadence Virtuso and schematic.
 
 Before I start the layout designing of the all cells in the library there was a sub part in this step which aimed to design a layout of an inverter and size it in such a way that it will provide minimum Energy-Delay Product (EDP) while minimizing the total cell area. Now it is normal for a rookie/non-technical person to think that this may need a hit-n-try method to get the optimum cell size along with optimum EDP. But that is not the case. For this, I designed a simple inverter layout and generated its spice netlist (.sp file) after performing DRC/LVS/QRC. Then with the help of [HSPICE](https://github.com/akash10295/Complete-VLSI-Project-Front-end-Back-end-/blob/master/inv_SPICE.sp) and the spice netlist I swept the value of Wp (Width of the p-mos) while keeping the Wn (Width of the n-mos) constant.
+
+
+
+![alt text](https://github.com/akash10295/Complete-VLSI-Project-Front-end-Back-end-/blob/master/Screenshots/alu%20outputs.jpg "Logo Title Text 1")
