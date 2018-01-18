@@ -144,3 +144,12 @@ Once all the layouts were done, next step was to create the library file using i
 For routing and floorplanning the tool I used was Cadence Encounter. This tool uses the mapped netlist and LEF file which I created in the steps 3 and 5 in part 4 above. Once these files are imported in the tool and required settings are set floorplanning and routing is done as per need. The snippit below shows the screenshot of the user interface of Encounter.
 
 ![alt text](http://www.utdallas.edu/~xxx110230/images/encounter19.jpg "Encounter UI")
+
+
+I also did the Static Time Analysis (STA) using PrimeTime to get the slack of the system.
+
+
+## 6.Final Layout and schematic imprt and matching of them.
+After done with the routing and floorplanning in Encounter I got the final layout of the system but this layout needs to be exported to Cadence Virtuso. To do so a Data Extraction File (DEF) is created/exported from Encounter. This DEF file is imported to cadence Virtuso which generated the final layout of an ALU in Cadence Virtuso. Below is the complete and zoomed in screenshot of the same.
+![alt text](https://github.com/akash10295/Complete-VLSI-Project-Front-end-Back-end-/blob/master/Screenshots/Layouts/final.JPG "Final layout")
+![alt text](https://github.com/akash10295/Complete-VLSI-Project-Front-end-Back-end-/blob/master/Screenshots/Layouts/alu%20zoomed.JPG "Zoomed final layout")
