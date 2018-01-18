@@ -33,5 +33,91 @@ There are many simulators available to run the verilog code. The one which I use
 
 
 ## 2. Synthesis
-The code which I wrote was a behvioral code and it needs to be converted to structural code. In simpler words, structural code describes the actual physical structure of the system whereas the behavioral code describes the behavior of the syhstem for different conditions.
-This process is also known as 'Synthesys'.
+The code which I wrote was a behvioral code and it needs to be converted to structural code. In simpler words, structural code describes the actual physical structure of the system whereas the behavioral code describes the behavior of the system for different conditions.
+This process is also known as 'Synthesis'.
+Using Synopsys's Design Vision I imported the library file provided by the college. Using this same library I synthesized my code. Once done, the [structural code](https://github.com/akash10295/Complete-VLSI-Project-Front-end-Back-end-/blob/master/alu_syn.v) was generated. This is also called mapped netlist.
+In the same step I also pulled out the cell report. Below is the _part_ of that cell report.
+```
+Information: Updating graph... (UID-83)
+ 
+****************************************
+Report : cell
+Design : b_alu_24_nr
+Version: L-2016.03-SP3
+Date   : Tue Sep 19 12:25:43 2017
+****************************************
+
+Attributes:
+    b - black box (unknown)
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    u - contains unmapped logic
+
+Cell                      Reference       Library             Area  Attributes
+--------------------------------------------------------------------------------
+U358                      nor2            library         1.000000  
+U359                      inv             library         1.000000  
+U360                      oai22           library         2.000000  
+U361                      oai22           library         2.000000  
+U362                      nor2            library         1.000000  
+U363                      inv             library         1.000000  
+U364                      aoi22           library         2.000000  
+U365                      inv             library         1.000000  
+U366                      nand2           library         1.000000  
+U367                      nor2            library         1.000000  
+U368                      inv             library         1.000000  
+U369                      nand3           library         1.000000  
+U370                      aoi22           library         2.000000  
+U371                      xor2            library         3.000000  
+U372                      nor2            library         1.000000  
+U373                      xor2            library         3.000000  
+U374                      nand2           library         1.000000  
+U375                      inv             library         1.000000  
+U376                      aoi22           library         2.000000  
+U377                      oai22           library         2.000000  
+U378                      inv             library         1.000000  
+U379                      nor2            library         1.000000  
+U380                      nand3           library         1.000000  
+U381                      nand2           library         1.000000  
+U382                      nand3           library         1.000000  
+U383                      nand2           library         1.000000  
+U384                      nand2           library         1.000000  
+U385                      oai12           library         2.000000  
+U386                      oai22           library         2.000000  
+U387                      oai22           library         2.000000  
+U388                      nor2            library         1.000000  
+U389                      inv             library         1.000000  
+U390                      oai22           library         2.000000  
+U391                      nor2            library         1.000000  
+U392                      inv             library         1.000000  
+U393                      nor2            library         1.000000  
+U394                      inv             library         1.000000  
+.
+.
+.
+.
+.
+(Skipping 1030 lines)
+.
+.
+.
+.
+out_reg[12]               dff             library         7.000000  n
+out_reg[13]               dff             library         7.000000  n
+out_reg[14]               dff             library         7.000000  n
+out_reg[15]               dff             library         7.000000  n
+out_reg[16]               dff             library         7.000000  n
+out_reg[17]               dff             library         7.000000  n
+out_reg[18]               dff             library         7.000000  n
+out_reg[19]               dff             library         7.000000  n
+out_reg[20]               dff             library         7.000000  n
+out_reg[21]               dff             library         7.000000  n
+out_reg[22]               dff             library         7.000000  n
+out_reg[23]               dff             library         7.000000  n
+out_reg[24]               dff             library         7.000000  n
+--------------------------------------------------------------------------------
+Total 4039 cells                                          6960.000000
+
+```
+This shows that there were 4039 cells in the final design.
