@@ -21,7 +21,8 @@ output out;
 
 assign out = in1 + in2;
 
-endmodule;
+endmodule
 ```
-For more learning about Verilog with examples you can visit [ASIC-World](http://www.asic-world.com/)
- My verilog code for this project is 
+For more learning about Verilog with examples you can visit [ASIC-World](http://www.asic-world.com/).
+
+My verilog code for this project is 
