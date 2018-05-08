@@ -1,6 +1,6 @@
 # VLSI Design Project (FrontEnd + BackEnd)
 
-This was my first academic project in my graduate studies under course __EE6325: VLSI Design__. This was a complete long project consisting of complete VLSI design process from front end designing (RTL coding/verification) to backend design (layout design). For the better flow, the project was divided into parts as follows:
+This was my first academic project in my graduate studies under course __EE6325: VLSI Design__ under professor __Dr. Carl Sechen__. This was a complete long project consisting of complete VLSI design process from front end designing (RTL coding/verification) to backend design (layout design). For the better flow, the project was divided into parts as follows:
 1. RTL Coding (Frontend part)
 2. Synthesis
 3. Layout designing (Backend part) (With a sub-part where aim was to minimize the Energy-Delay Product while minimizing the cell area)
